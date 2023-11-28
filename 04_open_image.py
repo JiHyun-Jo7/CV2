@@ -6,6 +6,7 @@ img = cv2.imread('02.jpg')
 if img is None:
     print("Image load failed")
     exit()
+
 cv2.namedWindow('image')
 cv2.moveWindow('image', 900, 400)       # Specify the position where the window appears (0, 0 based on the upper left)
 cv2.resizeWindow('image', 200, 500)
@@ -16,4 +17,5 @@ while True:
     # if cv2.waitKey() == ord('q'):    # ord : Transform ASCII
     if cv2.waitKey() == 27: # 27(ESC), 13(ENTER), 9(TAB)
         break
+        
 cv2.destroyAllWindows()
