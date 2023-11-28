@@ -15,7 +15,7 @@ while True:
     for barcode in barcodes:
         (x, y, w, h) = barcode.rect
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
-	# 사각형, 시작점 (x, y) 끝점 (x+w, y+h), 색상 빨강, 두께 2
+	# rectangle, start point, end point, color, thickness
         barcode_data = barcode.data.decode("utf-8")
         barcode_type = barcode.type
         text = "{} ({})".format(barcode_data, barcode_type)
