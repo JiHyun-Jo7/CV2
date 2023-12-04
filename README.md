@@ -352,8 +352,8 @@ This problem can be solved by adjusting the range of np.array.
 ---
 ### 22. Contour
 ---
-- 
-- 
+- Find Outline Using Contour
+- 컨투어 기능을 사용하여 아웃라인을 찾는다
 <details>
 	<summary>Result</summary>
   	<div markdown="1">
