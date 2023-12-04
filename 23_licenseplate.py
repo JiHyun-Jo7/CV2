@@ -1,4 +1,5 @@
 # https://github.com/JiHyun-Jo7/CV2/blob/main/README.md#23-license-plate-
+
 import cv2
 import numpy as np
 from PIL import Image
