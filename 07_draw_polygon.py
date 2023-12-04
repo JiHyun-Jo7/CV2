@@ -10,7 +10,7 @@ cv2.line(img, (50, 50), (150, 160), (0, 255, 255), 4)
 cv2.rectangle(img, (50, 200, 150, 100), (0, 255, 0), 2)
 # cv2.rectangle(img, (x, y, ∆x, ∆y), Color, thickness)
 cv2.rectangle(img, (50, 200), (150, 300), (0, 155, 0), -1)
-# cv2.rectangle(img, (start), (end), (0, 155, 0), -1 : fill)
+# cv2.rectangle(img, (start), (end), (color), -1 : fill)
 다각형 그리기
 cv2.circle(img, (300,100), 30, (255, 0, 0), -1)
 # cv2.circle(img, (center), radius, (color), -1)
