@@ -271,6 +271,7 @@ edge = cv2.Canny(img, minVal, maxVal)
 - Camera that outputs only a specific range of colors
 - 특정 색상만 출력하는 카메라
 ```
+# HSV에서 각 색상을 추출하기 위한 임계값
 cv2.inRange(src, lower range, upper range, dst ) 
 ```
 - src : Image, 이미지
@@ -279,6 +280,7 @@ cv2.inRange(src, lower range, upper range, dst )
 - dst = None
 
 ```
+# mask& original image 비트 연산
 res = cv2.bitwise_and(img1, img2, mask=mask)
 ```
 - mask 영역에서 공통으로 겹치는 영역 출력
@@ -308,7 +310,51 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
+### 19.
+---
+-
+-
+---
+### 20. match template
+---
+- Find different pictures using threshold
+- 임계값을 이용한 다른 그림 찾기
 
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
 
+![tempmatching](https://github.com/JiHyun-Jo7/CV2/assets/141097551/9990e7ca-1df0-4178-8854-26273fd547a2)
 
+- You can see that one circle that falls below the threshold (0.8) is not displayed.
+- 임계값(0.8)에 미달한 원 한개에 박스가 쳐지지 않은 것을 확인할 수 있다
 
+   </div>
+</details>
+---
+### 21. 
+---
+- Print text in image file
+- 이미지 파일 속에 있는 텍스트 출력
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
+
+![letter02](https://github.com/JiHyun-Jo7/CV2/assets/141097551/12f1d9e1-3f0c-4a3d-8410-7b0d141e5447)
+![pytesseract](https://github.com/JiHyun-Jo7/CV2/assets/141097551/4a0813e7-6043-4113-b886-d385bd934405)
+
+   </div>
+</details>
+---
+### 22.
+---
+-
+-
+
+---
+### 23. 
+---
+- 
+- 
+
+--- 
