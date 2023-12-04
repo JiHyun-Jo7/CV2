@@ -3,8 +3,7 @@ import numpy as np
 
 img = cv2.imread('01.jpg', cv2.IMREAD_GRAYSCALE)
 
-# if pixel > 127, pixel is 255 and pixel < 127, pixel is 0
-# pixel < threshold_value, pixel is value and pixel < 127, pixel is 0
+# pixel > 127, pixel is 255 and pixel < 127, pixel is 0
 ret, th1 = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 
 # pixel > 127, pixel is 0 and pixel < 127, pixel is 255
