@@ -1,3 +1,4 @@
+# https://github.com/JiHyun-Jo7/CV2/tree/main#03-rtsp-real-time-streaming-protocol
 import cv2
 
 rtsp_url = 'rtsp://210.99.70.120:1935/live/cctv040.stream'
