@@ -66,6 +66,31 @@
 ---
 - Video Edge Detection using Canny
 - Canny를 사용한 동영상의 edge 추출
+<details>
+	<summary>Original</summary>
+  	<div markdown="1">
+
+![canny_original](https://github.com/JiHyun-Jo7/CV2/assets/141097551/b3d159f0-d99a-45bc-bb08-482733c34379)
+
+   </div>
+</details>
+<details>
+	<summary>Edge</summary>
+  	<div markdown="1">
+
+![canny_edge](https://github.com/JiHyun-Jo7/CV2/assets/141097551/9fcdf70e-35f0-47e8-8582-5ccf38beda69)
+
+   </div>
+</details>
+<details>
+	<summary>Inverse</summary>
+  	<div markdown="1">
+
+![canny_inverse](https://github.com/JiHyun-Jo7/CV2/assets/141097551/b1e608e7-cd10-4779-a5a6-f0afeebd339b)
+
+   </div>
+</details>
+
 ---
 ### 09. Video Recoding 📹
 ---
@@ -77,6 +102,18 @@
 - Output Gaussian blur in 4 steps
 - Display steps as text
 - 가우시안 블러 4단계 출력, 단계를 텍스트로 표시
+
+<details>
+	<summary>Gaussian Blur</summary>
+  	<div markdown="1">
+
+![gaussian01](https://github.com/JiHyun-Jo7/CV2/assets/141097551/e3ec6e02-9fc3-4731-9fa1-70f1f18b23be)
+![gaussian02](https://github.com/JiHyun-Jo7/CV2/assets/141097551/d9cd9b06-e312-4e47-9310-23d618721b22)
+![gaussian03](https://github.com/JiHyun-Jo7/CV2/assets/141097551/e3069fac-aa2a-474c-a6e8-c39f7901fd94)
+
+   </div>
+</details>
+
 ---
 ### 11. Color Palette 🎨
 ---
