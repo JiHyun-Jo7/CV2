@@ -128,7 +128,7 @@
 ```
 cv2.threshold(img, threshold_value, value, flag)
 ```
-||value<th_value|value>th_value|
+|flag|value<th_value|value>th_value|
 |:---:|:---:|:---:|
 |THRESH_BINARY|0|value|
 |THRESH_BINARY_INV|value|0|
@@ -174,15 +174,48 @@ cv2.adaptiveThreshold(img, value, adaptiveMethod, thresholdType, blocksize, C)
 ---
 ### 14. Blur 01
 ---
+- Image blurring using pixel average within filter box (5x5)
+- 필터 박스(5x5) 안의 픽셀 평균을 사용한 이미지 블러 처리
+<details>
+	<summary>Blur</summary>
+  	<div markdown="1">
+
+![blur01](https://github.com/JiHyun-Jo7/CV2/assets/141097551/82dbf7c8-ceec-47a6-880b-f8a66e918139)
+
+
+   </div>
+</details>
 
 ---
 ### 15. Blur 02
 ---
+- Use 3 different blurring techniques using the trackbar
+- 트랙바를 사용하여 3 가지의 블러 처리 기법을 사용
+- Blur / Gaussian Blur / MedianBlur
+<details>
+	<summary>Blur</summary>
+  	<div markdown="1">
+
+![blur02_1](https://github.com/JiHyun-Jo7/CV2/assets/141097551/e884bc09-ef68-40dd-818c-e5055e9df89c)
+![blur02_2](https://github.com/JiHyun-Jo7/CV2/assets/141097551/6ba41f5c-6f31-4073-b491-97172694b2f3)
+![blur02_3](https://github.com/JiHyun-Jo7/CV2/assets/141097551/6e443911-c71b-40a4-a30d-2498359b13b0)
+
+   </div>
+</details>
 
 ---
 ### 16. Keyboard ⌨️
 ---
+- Print an embossed image of the keyboard using the Laplacian, Sobel
+- Laplacian, Sobel을 사용하여 키보드의 음양각 이미지를 출력
+<details>
+	<summary>Keyboard</summary>
+  	<div markdown="1">
 
+![keyboard](https://github.com/JiHyun-Jo7/CV2/assets/141097551/2708059d-a3f2-4fd4-8989-51fa163f9f3a)
+
+   </div>
+</details>
 ---
 ### 17. Canny 02 
 ---
