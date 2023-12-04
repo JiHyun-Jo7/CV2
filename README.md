@@ -216,6 +216,7 @@ cv2.adaptiveThreshold(img, value, adaptiveMethod, thresholdType, blocksize, C)
 
    </div>
 </details>
+
 ---
 ### 17. Canny 02 
 ---
@@ -224,9 +225,28 @@ edge = cv2.Canny(img, minVal, maxVal)
 ```
 - Image comparison according to minVal, maxVal difference
 - minVal, maxVal 값에 따른 이미지 결과 비교
+<details>
+	<summary>Canny</summary>
+  	<div markdown="1">
+
+![canny](https://github.com/JiHyun-Jo7/CV2/assets/141097551/af39d732-9cc1-477e-add3-4117f295df36)
+
+   </div>
+</details>
+
 ---
 ### 18. Color Mask
 ---
+- 
+- 
+<details>
+	<summary>title</summary>
+  	<div markdown="1">
+
+![colorvideo](https://github.com/JiHyun-Jo7/CV2/assets/141097551/f4496d36-392a-4cd3-bf8b-a7dcfe86579b)
+
+   </div>
+</details>
 
 ---
 
