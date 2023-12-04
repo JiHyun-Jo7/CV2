@@ -1,3 +1,4 @@
+# https://github.com/JiHyun-Jo7/CV2/tree/main#01-open-video
 import cv2
 
 cap = cv2.VideoCapture('cat.mp4')
