@@ -8,7 +8,7 @@ if img is None:
     exit()
 
 cv2.namedWindow('image')
-cv2.moveWindow('image', 900, 400)       # Specify the position where the window appears (0, 0 based on the upper left)
+cv2.moveWindow('image', 900, 400)       # Specify the location where the window appears (0, 0 based on the upper left)
 cv2.resizeWindow('image', 200, 500)
 cv2.imshow('image', img)                # cv2.imshow('file name', option), default: color
 
