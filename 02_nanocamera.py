@@ -1,3 +1,4 @@
+# https://github.com/JiHyun-Jo7/CV2/tree/main#02-nano-camera-
 import cv2
 import nanocamera as nano
 
