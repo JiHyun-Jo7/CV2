@@ -67,6 +67,7 @@
 ---
 - Use various thresholds
 - 여러 종류의 threshold를 사용
+
 ```
 cv2.threshold(img, threshold_value, value, flag)
 ```
@@ -77,13 +78,22 @@ cv2.threshold(img, threshold_value, value, flag)
 |THRESH_TRUNC|img|th_value|
 |THRESH_TOZERO|0|img|
 |THRESH_TOZERO_INV|img|0|
----
+
+<details>
+	<summary>Threshold Image</summary>
+  	<div markdown="1">
+
+![thresholds](https://github.com/JiHyun-Jo7/CV2/assets/141097551/36bcf0ea-7d2b-4ee9-bab2-c434fc54e825)
+
+   </div>
+</details>
 
 ---
 ### 13. Threshold 02
 ---
 - Use various adaptivethresholds
 - 여러 종류의 adaptivethresholds를 사용
+---
 ```
 cv2.adaptiveThreshold(img, value, adaptiveMethod, thresholdType, blocksize, C)
 ```
