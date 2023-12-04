@@ -350,17 +350,38 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
-### 22.
----
--
--
-
-
----
-### 23. 
+### 22. Contour
 ---
 - 
 - 
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
 
+![contour](https://github.com/JiHyun-Jo7/CV2/assets/141097551/a5c3cadc-c861-4c99-b9c4-977f36ccd19b)
 
+   </div>
+</details>
+
+---
+### 23. License Plate 🚗
+---
+- Recognizes car license plates in images and outputs data
+- 이미지 속 자동차 번호판을 인식하여 데이터를 출력
+
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
+
+![licenseplate](https://github.com/JiHyun-Jo7/CV2/assets/141097551/f054a181-1dd9-4211-84f2-5d76d8cfe716)  
+
+![licenseplate_result](https://github.com/JiHyun-Jo7/CV2/assets/141097551/3d079804-126b-4226-9c9f-b585bc502058)
+- All letter and numbers matched the result,  
+but it was unfortunate that there was a ':' at the end.  
+It is assumed that it is because of the '⚡' at the end of the electric vehicle license plate.
+- 한글과 숫자 모두 일치했지만 ':' 이 붙는 아쉬운 결과가 나왔다.  
+전기차 번호판 끝에 있는 '⚡' 때문이라고 추측된다.
+
+   </div>
+</details>
 --- 
