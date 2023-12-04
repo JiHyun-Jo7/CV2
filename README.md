@@ -317,7 +317,7 @@ This problem can be solved by adjusting the range of np.array.
 
 
 ---
-### 20. match template
+### 20. match template 
 ---
 - Find different pictures using threshold
 - 임계값을 이용한 다른 그림 찾기
@@ -335,7 +335,7 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
-### 21. 
+### 21. Teseract 📖
 ---
 - Print text in image file
 - 이미지 파일 속에 있는 텍스트 출력
