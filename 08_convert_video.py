@@ -12,8 +12,8 @@ while cap.isOpened():
 
         inversed = ~frame
         cv2.imshow('frame', frame)
-        # cv2.imshow('inversed', inversed)
-        # cv2.imshow('edge', edge)
+        cv2.imshow('inversed', inversed)
+        cv2.imshow('edge', edge)
 
     if cv2.waitKey(25) & 0xFF == ord('q'):
         break
