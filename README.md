@@ -19,6 +19,16 @@
 ---
 - video Output from RTSP 
 - RTSP 영상 출력
+<details>
+	<summary>Threshold Image</summary>
+  	<div markdown="1">
+
+![RTSP](https://github.com/JiHyun-Jo7/CV2/assets/141097551/7d444be4-8ea8-4869-8721-efea269eb6b9)
+
+
+   </div>
+</details>
+
 ---
 ### 04. Open Image 🖼️
 ---
@@ -34,6 +44,16 @@
 ---
 - Get Informations in Image
 - 이미지의 정보 확인
+
+<details>
+	<summary>Information in Image</summary>
+  	<div markdown="1">
+
+![info](https://github.com/JiHyun-Jo7/CV2/assets/141097551/0a96bea1-e60f-4663-b705-fe32790533d1)
+
+   </div>
+</details>
+
 ---
 ### 07. Draw Polygon ✏️
 ---
@@ -89,10 +109,10 @@ cv2.threshold(img, threshold_value, value, flag)
 </details>
 
 ---
-### 13. Threshold 02
+### 13. adaptivethreshold
 ---
 - Use various adaptivethresholds
-- 여러 종류의 adaptivethresholds를 사용
+- 여러 종류의 adaptivethreshold를 사용
 ---
 ```
 cv2.adaptiveThreshold(img, value, adaptiveMethod, thresholdType, blocksize, C)
@@ -100,12 +120,20 @@ cv2.adaptiveThreshold(img, value, adaptiveMethod, thresholdType, blocksize, C)
 - img: Grayscale image
 - value: adaptiveMethod에 의해 계산된 문턱값과 thresholdType에 의해 픽셀에 적용될 최대값
 - adaptiveMethod: 사용할 Adaptive Thresholding 알고리즘
-- cv2.ADAPTIVE_THRESH_MEAN_C: 적용할 픽셀 (x,y)를 중심으로 하는 
-- blocksize x blocksize 안에 있는 픽셀값의 평균에서 C를 뺀 값을 문턱값으로 함
-- cv2.ADAPTIVE_THRESH_GAUSSIAN_C: 적용할 픽셀 (x,y)를 중심으로 하는 
-- blocksize x blocksize안에 있는 Gaussian 윈도우 기반 가중치들의 합에서 C를 뺀 값을 문턱값으로 함
+- cv2.ADAPTIVE_THRESH_MEAN_C: 적용할 픽셀 (x,y)를 중심으로 하는 blocksize x blocksize 안에 있는 픽셀값의 평균에서 C를 뺀 값을 문턱값으로 함
+- cv2.ADAPTIVE_THRESH_GAUSSIAN_C: 적용할 픽셀 (x,y)를 중심으로 하는 blocksize x blocksize안에 있는 Gaussian 윈도우 기반 가중치들의 합에서 C를 뺀 값을 문턱값으로 함
 - blocksize: 픽셀에 적용할 문턱값을 계산하기 위한 블럭 크기. 적용될 픽셀이 블럭의 중심이 됨. 따라서 blocksize는 홀수여야 함
 - C: 보정 상수로, 이 값이 양수이면 계산된 adaptive 문턱값에서 빼고, 음수면 더해줌. 0이면 그대로.
+
+<details>
+	<summary>Adaptivethreshold Image</summary>
+  	<div markdown="1">
+
+![adapt](https://github.com/JiHyun-Jo7/CV2/assets/141097551/0b0877bd-4257-4a36-b825-773ebf8dad55)
+
+   </div>
+</details>
+
 ---
 ### 14. Blur 01
 ---
