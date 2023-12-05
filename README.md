@@ -311,14 +311,59 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
-### 19.
+### 19. [Cam Shift](19_camshift.py)
 ---
--
--
+- object tracking using camshift
+- camshift를 사용한 객체 추적
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
 
+```
+        if k == ord('i'):
+            print('Select Area and Enter Key')
+            inputmode = True
+            frame2 = frame.copy()
+
+            while inputmode:
+                cv2.imshow('frame', frame)
+                cv2.waitKey(0)
+```
+- Press 'i' to enter input mode.  
+  In input mode, if you draw a rectangle on the desired object with the mouse and press Enter,  
+  you can see that the rectangle tracks the object.
+- 'i' 를 입력하면 입력모드에 진입한다  
+  입력모드에서 마우스로 원하는 객체에 사각형을 그리고 엔터를 입력하면 사각형이 객체를 추적하는 것을 확인할 수 있다
+
+```
+        elif event == cv2.EVENT_LBUTTONUP:
+            inputmode = False
+            rectangle = False
+            cv2.rectangle(frame, (col, row), (x, y), (0, 255, 0), 2)
+            height, width = abs(row - y), abs(col - x)
+            trackWindow = (col, row, width, height)
+            roi = frame[row:row+height, col:col+width]
+            hsv_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+            mask = cv2.inRange(hsv_roi, np.array((0., 60., 32.)), np.array((180., 255., 255.)))
+            roi_hist = cv2.calcHist([hsv_roi], [0], mask, [180], [0, 180])
+            cv2.normalize(roi_hist, roi_hist, 0, 255, cv2.NORM_MINMAX)
+```
+- When the left mouse button is released, the input mode and rectangle drawing are terminated  
+  The trackWindow variable stores the coordinates and size of the selected region  
+  The selected object (ROI) is extracted from the frame, and this ROI is converted to the HSV color space  
+  In the HSV space, a mask is applied to select a specific color range, and this is used to calculate the roi_hist, which is then normalized.
+- 마우스 왼클릭을 떼면 입력모드와 사각형 그리기가 종료된다  
+  trackWindow 변수에 선택한 영역의 좌표와 크기를 저장한다  
+  선택한 객체(Roi)를 frame에서 추출하고, 해당 Roi를 HSV 색상 공간으로 변환한다  
+  HSV 공간에서 특정 색상 범위를 Masking하여 roi_hist을 계산하고 이 값을 정규화한다
+
+![camshift](https://github.com/JiHyun-Jo7/CV2/assets/141097551/5034351e-0116-4485-be95-2d7a7c9a36a6)
+
+   </div>
+</details>
 
 ---
-### 20. [Match Template](20_matchtemplate.py) 
+### 20. 🕵️[Match Template](20_matchtemplate.py) 
 ---
 - Find different pictures using threshold
 - 임계값을 이용한 다른 그림 찾기
