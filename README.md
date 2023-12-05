@@ -5,17 +5,17 @@
 - Ubuntu 18.04.6 LTS
 - python 3.6.9
 ---
-### 01. [Open Video](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/01_openvideo.py)
+### 01. [Open Video](01_openvideo.py)
 ---
 - Output mp4 file in samba folder
 - samba 폴더에 있는 mp4 파일 출력
 ---
-### 02. 📸[Nano Camera](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/02_nanocamera.py)
+### 02. 📸[Nano Camera](02_nanocamera.py)
 ---
 - Video Output using CSI, USB camera
 - CSI, USB 카메라를 사용하여 영상 출력
 ---
-### 03. [RTSP (Real Time Streaming Protocol)](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/03_rtsp.py)
+### 03. [RTSP (Real Time Streaming Protocol)](03_rtsp.py)
 ---
 - video Output from RTSP 
 - RTSP 영상 출력
@@ -30,17 +30,17 @@
 </details>
 
 ---
-### 04. 🖼️[Open Image](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/04_open_image.py)
+### 04. 🖼️[Open Image](04_open_image.py)
 ---
 - Position and resize the image to be output
 - 이미지를 출력할 위치, 크기 조절
 ---
-### 05. 🐼[Gray Scale](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/05_grayscale.py)
+### 05. 🐼[Gray Scale](05_grayscale.py)
 ---
 - Convert Image to Gray
 - 이미지를 흑백으로 변환
 ---
-### 06. 📃[Get Info](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/06_get_info.py)
+### 06. 📃[Get Info](06_get_info.py)
 ---
 - Get Informations in Image
 - 이미지의 정보 확인
@@ -55,7 +55,7 @@
 </details>
 
 ---
-### 07. ✏️[Draw Polygon](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/07_draw_polygon.py)
+### 07. ✏️[Draw Polygon](07_draw_polygon.py)
 ---
 - Draw line, polygons, circle, text
 - Select location, Color, Tickness, Size
@@ -80,7 +80,7 @@ cv2.putText(img, text, location, cv2.FONT_HERSHEY_SIMPLEX, Size, Color, thicknes
 </details>
 
 ---
-### 08. [Canny 01](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/08_canny.py)
+### 08. [Canny 01](08_canny.py)
 ---
 - Video Edge Detection using Canny
 - Canny를 사용한 동영상의 edge 추출
@@ -110,12 +110,12 @@ cv2.putText(img, text, location, cv2.FONT_HERSHEY_SIMPLEX, Size, Color, thicknes
 </details>
 
 ---
-### 09. 📹[Video Recoding](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/09_video_recoding.py) 
+### 09. 📹[Video Recoding](09_video_recoding.py) 
 ---
 - Recode the Video and Print
 - 동영상 녹화 및 출력
 ---
-### 10. [Gaussian Blur](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/10_Gaussianblur.py)
+### 10. [Gaussian Blur](10_Gaussianblur.py)
 ---
 - Output Gaussian blur in 4 steps
 - Display steps as text
@@ -133,7 +133,7 @@ cv2.putText(img, text, location, cv2.FONT_HERSHEY_SIMPLEX, Size, Color, thicknes
 </details>
 
 ---
-### 11. 🎨[Color Palette](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/11_color_palette.py)
+### 11. 🎨[Color Palette](11_color_palette.py)
 ---
 - Make RGB color palette using trackbar
 - 트랙 바를 사용한 RGB 컬러 팔레트
@@ -148,7 +148,7 @@ cv2.putText(img, text, location, cv2.FONT_HERSHEY_SIMPLEX, Size, Color, thicknes
 </details>
 
 ---
-### 12. [Threshold](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/12_threshold.py)
+### 12. [Threshold](12_threshold.py)
 ---
 - Use various thresholds
 - 여러 종류의 threshold를 사용
@@ -174,7 +174,7 @@ cv2.threshold(img, threshold_value, value, flag)
 </details>
 
 ---
-### 13. [Adaptivethreshold](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/13_adaptivethreshold.py)
+### 13. [Adaptivethreshold](13_adaptivethreshold.py)
 ---
 - Use various adaptivethresholds
 - 여러 종류의 adaptivethreshold를 사용
@@ -203,7 +203,7 @@ cv2.adaptiveThreshold(img, value, adaptiveMethod, thresholdType, blocksize, C)
 </details>
 
 ---
-### 14. [Blur 01](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/14_blur01.py)
+### 14. [Blur 01](14_blur01.py)
 ---
 - Image blurring using pixel average within filter box (5x5)
 - 필터 박스(5x5) 안의 픽셀 평균을 사용한 이미지 블러 처리
@@ -218,7 +218,7 @@ cv2.adaptiveThreshold(img, value, adaptiveMethod, thresholdType, blocksize, C)
 </details>
 
 ---
-### 15. [Blur 02](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/15_blur02.py)
+### 15. [Blur 02](15_blur02.py)
 ---
 - Use 3 different blurring techniques using the trackbar
 - 트랙바를 사용하여 3 가지의 블러 처리 기법을 사용
@@ -235,7 +235,7 @@ cv2.adaptiveThreshold(img, value, adaptiveMethod, thresholdType, blocksize, C)
 </details>
 
 ---
-### 16. ⌨️[Keyboard](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/16_keyboard.py) 
+### 16. ⌨️[Keyboard](16_keyboard.py) 
 ---
 - Print an embossed image of the keyboard using the Laplacian, Sobel
 - Laplacian, Sobel을 사용하여 키보드의 음양각 이미지를 출력
@@ -249,7 +249,7 @@ cv2.adaptiveThreshold(img, value, adaptiveMethod, thresholdType, blocksize, C)
 </details>
 
 ---
-### 17. [Canny 02](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/17_canny02.py)
+### 17. [Canny 02](17_canny02.py)
 ---
 ```
 edge = cv2.Canny(img, minVal, maxVal)
@@ -266,7 +266,7 @@ edge = cv2.Canny(img, minVal, maxVal)
 </details>
 
 ---
-### 18. [Color Mask](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/18_color_mask.py)
+### 18. [Color Mask]18_color_mask.py)
 ---
 - Camera that outputs only a specific range of colors
 - 특정 색상만 출력하는 카메라
@@ -317,7 +317,7 @@ This problem can be solved by adjusting the range of np.array.
 
 
 ---
-### 20. [Match Template](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/20_matchtemplate.py) 
+### 20. [Match Template](20_matchtemplate.py) 
 ---
 - Find different pictures using threshold
 - 임계값을 이용한 다른 그림 찾기
@@ -335,7 +335,7 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
-### 21. 📖[Teseract](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/21_teseract.py)
+### 21. 📖[Teseract](21_teseract.py)
 ---
 - Print text in image file
 - 이미지 파일 속에 있는 텍스트 출력
@@ -350,7 +350,7 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
-### 22. [Contour](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/22_contour.py)
+### 22. [Contour](22_contour.py)
 ---
 - Find Outline Using Contour
 - 컨투어 기능을 사용하여 아웃라인을 찾는다
@@ -364,7 +364,7 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
-### 23. 🚗[License Plate](https://github.com/JiHyun-Jo7/CV2/blob/144b005e2e03f28916eeb1b66f38238ae2b461f4/23_licenseplate.py) 
+### 23. 🚗[License Plate](23_licenseplate.py) 
 ---
 - Recognizes car license plates in images and outputs data
 - 이미지 속 자동차 번호판을 인식하여 데이터를 출력
