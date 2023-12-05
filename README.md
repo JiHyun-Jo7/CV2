@@ -266,7 +266,7 @@ edge = cv2.Canny(img, minVal, maxVal)
 </details>
 
 ---
-### 18. [Color Mask]18_color_mask.py)
+### 18. [Color Mask](18_color_mask.py)
 ---
 - Camera that outputs only a specific range of colors
 - 특정 색상만 출력하는 카메라
