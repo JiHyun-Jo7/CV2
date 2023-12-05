@@ -311,10 +311,11 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
-### 19. [Cam Shift](19_camshift.py)
+### 19. [CAM(Continuously Adaptive Mean) Shift](19_camshift.py)
 ---
 - object tracking using camshift
 - camshift를 사용한 객체 추적
+
 <details>
 	<summary>Result</summary>
   	<div markdown="1">
@@ -363,10 +364,30 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
-### 20. 🕵️[Match Template](20_matchtemplate.py) 
+### 20. [Mean Shift](20_meanshift.py)
 ---
-- Find different pictures using threshold
-- 임계값을 이용한 다른 그림 찾기
+- object tracking using meanshift
+- meanshift를 사용한 객체 추적  
+
+||When the object blends into the background|Change in size and direction|
+|:---:|:---:|:---:|
+|CAM|Bad|Good|
+|MEAN|Good|Bad|
+
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
+
+![meanshift](https://github.com/JiHyun-Jo7/CV2/assets/141097551/fb2c2231-68e6-4e60-a3dc-4f43fc78615d)
+
+   </div>
+</details>
+
+---
+### 21. 🕵️[Match Template 01](21_matchtemplate01.py) 
+---
+- Find different pictures using match template
+- match template을 이용한 다른 그림 찾기
 
 <details>
 	<summary>Result</summary>
@@ -377,11 +398,68 @@ This problem can be solved by adjusting the range of np.array.
 - You can see that one circle that falls below the threshold (0.8) is not displayed.
 - 임계값(0.8)에 미달한 원 한개에 박스가 쳐지지 않은 것을 확인할 수 있다
 
+- Template Matching의 단점
+  - scale(크기)에 민감 : 같은 크기의 sliding window로 템플릿을 매칭시켜가며 찾기 때문에 크기에 민감하다.
+    템플릿이나 원본 이미지의 크기를 변형시키며 매칭하는 방법으로 해결해야 한다. --> multi scale template matching
+  - rotation(회전)에 민감 : 위와 같은 이유로 회전에 민감하다. 이 또한 회전시켜가며 매칭할 수 있지만, 각도가 조금만 다르면 성능이 떨어진다. 
+
    </div>
 </details>
 
 ---
-### 21. 📖[Teseract](21_teseract.py)
+### 22. 🕵️[Match Template 02](20_matchtemplate02.py) 
+---
+- Use various match templates
+- 여러 종류의 match templates 사용해보기
+
+||Matching|Good|Bad|No correlation|
+|:---:|:---:|:---:|:---:|:---:|
+|cv2.TM_CCOEFF|Correlation coefficient|1|-1|0|
+|cv2.TM_CCOEFF_NORMED|CCOEFF Normalization|-|-|-|
+|cv2.TM_CCORR|Correlation relationship|↑|0|-|
+|cv2.TM_CCORR_NORMED|CCORR Normalization|-|-|-|
+|cv2.TM_SQDIFF|Squared difference|0|↑|-|
+|cv2.TM_SQDIFF_NORMED|SQDIFF Normalization|-|-|-|
+
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
+
+![matchtemplate01](https://github.com/JiHyun-Jo7/CV2/assets/141097551/c572a610-d483-43df-80fe-28942d5833b8)
+![matchtemplate02](https://github.com/JiHyun-Jo7/CV2/assets/141097551/8e3bcd09-f0a8-4e8e-8180-970795fa7b3b)
+![matchtemplate03](https://github.com/JiHyun-Jo7/CV2/assets/141097551/3d2f2677-b619-4282-bbee-46f9f4d09caa)
+![matchtemplate04](https://github.com/JiHyun-Jo7/CV2/assets/141097551/7057b295-f948-40c7-ae30-3b2afb89775f)
+![matchtemplate05](https://github.com/JiHyun-Jo7/CV2/assets/141097551/56d720b3-6d41-4b0b-9f87-133424cc9f5e)
+
+
+   </div>
+</details>
+
+---
+### 23. [Contour](23_contour.py)
+---
+- Create image contour lines. The recognition rate of objects is high when the background is black and the object is white.
+- 이미지 등고선을 만든다 찾을 객체를 하얀색, 배경을 검은색으로 만들면 객체 인식률이 높아진다
+
+```
+cv2.findContours(thimg, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+```
+- cv2.RETR_external	가장 바깥쪽의 외곽선만 찾음
+- cv2.RETR_list		모든 외곽선을 찾지만 계층 구조를 구성하지 않음
+- cv2.RETR_ccomp	모든 외곽선을 찾고 2레벨의 계층 구조로 구성
+- cv2.RETR_tree		모든 외곽선을 찾고 모든 계층 구조를 구성
+  
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
+
+![contour](https://github.com/JiHyun-Jo7/CV2/assets/141097551/a5c3cadc-c861-4c99-b9c4-977f36ccd19b)
+
+   </div>
+</details>
+
+---
+### 24. 📖[Teseract](24_teseract.py)
 ---
 - Print text in image file
 - 이미지 파일 속에 있는 텍스트 출력
@@ -396,21 +474,7 @@ This problem can be solved by adjusting the range of np.array.
 </details>
 
 ---
-### 22. [Contour](22_contour.py)
----
-- Find Outline Using Contour
-- 컨투어 기능을 사용하여 아웃라인을 찾는다
-<details>
-	<summary>Result</summary>
-  	<div markdown="1">
-
-![contour](https://github.com/JiHyun-Jo7/CV2/assets/141097551/a5c3cadc-c861-4c99-b9c4-977f36ccd19b)
-
-   </div>
-</details>
-
----
-### 23. 🚗[License Plate](23_licenseplate.py) 
+### 25. 🚗[License Plate](25_licenseplate.py) 
 ---
 - Recognize car license plates in images using Open CV, preprocess data, and output processed data with tesseract
 - Open CV를 사용하여 이미지 속 자동차 번호판을 인식하여 데이터를 가공, tesseract로 가공한 데이터 출력
