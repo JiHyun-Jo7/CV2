@@ -367,8 +367,8 @@ This problem can be solved by adjusting the range of np.array.
 ---
 ### 23. 🚗[License Plate](23_licenseplate.py) 
 ---
-- Recognizes car license plates in images and outputs data
-- 이미지 속 자동차 번호판을 인식하여 데이터를 출력
+- Recognize car license plates in images using Open CV, preprocess data, and output processed data with tesseract
+- Open CV를 사용하여 이미지 속 자동차 번호판을 인식하여 데이터를 가공, tesseract로 가공한 데이터 출력
 
 <details>
 	<summary>Result</summary>
