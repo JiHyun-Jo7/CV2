@@ -395,13 +395,13 @@ This problem can be solved by adjusting the range of np.array.
 
 ![tempmatching](https://github.com/JiHyun-Jo7/CV2/assets/141097551/9990e7ca-1df0-4178-8854-26273fd547a2)
 
-- You can see that one circle that falls below the threshold (0.8) is not displayed.
+- You can see that one circle that falls below the threshold (0.8) is not displayed
 - 임계값(0.8)에 미달한 원 한개에 박스가 쳐지지 않은 것을 확인할 수 있다
 
 - Template Matching의 단점
-  - scale(크기)에 민감 : 같은 크기의 sliding window로 템플릿을 매칭시켜가며 찾기 때문에 크기에 민감하다.
-    템플릿이나 원본 이미지의 크기를 변형시키며 매칭하는 방법으로 해결해야 한다. --> multi scale template matching
-  - rotation(회전)에 민감 : 위와 같은 이유로 회전에 민감하다. 이 또한 회전시켜가며 매칭할 수 있지만, 각도가 조금만 다르면 성능이 떨어진다. 
+  - scale(크기)에 민감 : 같은 크기의 sliding window로 템플릿을 매칭시켜가며 찾기 때문에 크기에 민감하다  
+    템플릿이나 원본 이미지의 크기를 변형시키며 매칭하는 방법으로 해결해야 한다 --> multi scale template matching
+  - rotation(회전)에 민감 : 위와 같은 이유로 회전에 민감하다. 이 또한 회전시켜가며 매칭할 수 있지만, 각도가 조금만 다르면 성능이 떨어진다 
 
    </div>
 </details>
@@ -438,7 +438,7 @@ This problem can be solved by adjusting the range of np.array.
 ---
 ### 23. [Contour](23_contour.py)
 ---
-- Create image contour lines. The recognition rate of objects is high when the background is black and the object is white.
+- Create image contour lines The recognition rate of objects is high when the background is black and the object is white
 - 이미지 등고선을 만든다 찾을 객체를 하얀색, 배경을 검은색으로 만들면 객체 인식률이 높아진다
 
 ```
@@ -498,14 +498,50 @@ Threshold 대신 Canny를 사용하여 흑백 처리를 진행했다
 ![licenseplate](https://github.com/JiHyun-Jo7/CV2/assets/141097551/7f1dc02f-863a-4332-af51-69367ec0e9b3)
 ![licenseplate_result](https://github.com/JiHyun-Jo7/CV2/assets/141097551/8bb21b28-7c56-4b09-b779-8f3ddf30b417)
 
-- The number of car numbers in Korea has been reorganized several times recently, so the number is not unified.  
-  If the number of numbers is unified in a country, it would be good to use the <config='--psm x'> function. (x = number of license plate)
+- The number of car numbers in Korea has been reorganized several times recently, so the number is not unified  
+  If the number of numbers is unified in a country, it would be good to use the <config='--psm x'> function (x = number of license plate)
 - If i use the YOLO module, you can automatically recognize the location of the car license plate,  
-  but it is a bit disappointing that it was not applied.
+  but it is a bit disappointing that it was not applied
 - 한국의 자동차 번호의 수는 최근 수차례 개편되어 갯수가 통일되어있지 않은데,  
   만일 번호의 수가 통일되어있는 국가라면 <config='--psm x'> 기능을 사용하면 좋을 것 같다 (x = 자동차 번호의 수)
 - YOLO 모듈을 사용하면 자동차 번호판을 자동으로 인식할 수 있는데 해당 기능을 적용하면 더 좋은 프로그램이 될 것 같다
 
    </div>
 </details>
---- 
+
+---
+### 26. [Barcode 01](26_Barcode01.py) 
+---
+- Read the barcode in the video using the pyzbar function, and save it as a csv file
+- pyzbar를 사용하여 영상 속 바코드를 읽고 csv 파일로 저장한다
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
+		
+![barcode01](https://github.com/JiHyun-Jo7/CV2/assets/141097551/21e86269-c35c-4f03-a7ef-85405c697912)
+![csv](https://github.com/JiHyun-Jo7/CV2/assets/141097551/42ece025-0b09-4e07-8c48-136e04c697ab)
+
+- The date and time the barcode was taken, and barcode data were recorded in a csv file.
+- 바코드를 찍은 날짜, 시간, 바코드 데이터가 csv 파일에 기록되었다.
+
+   </div>
+</details>
+
+---
+### 27. [Barcode 02](26_Barcode02.py) 
+---
+- Read the barcode in the video, print the barcode data.
+- 영상 속 바코드를 읽고 데이터를 출력한다
+
+<details>
+	<summary>Result</summary>
+  	<div markdown="1">
+		
+![terminal](https://github.com/JiHyun-Jo7/CV2/assets/141097551/435126e5-9fd7-4c70-ad99-81a061323e6b)
+![barcode02](https://github.com/JiHyun-Jo7/CV2/assets/141097551/187a8896-c744-4c97-820d-73562a6688aa)
+
+- Barcode data was printed accurately on the terminal.
+- 바코드 데이터가 터미널에 정확하게 출력됐다.
+ 
+   </div>
+</details>
