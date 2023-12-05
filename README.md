@@ -373,6 +373,18 @@ This problem can be solved by adjusting the range of np.array.
 <details>
 	<summary>Result</summary>
   	<div markdown="1">
+
+```
+# Convert image to black and white and Outline extraction
+edge = cv2.Canny(dst, 150, 180)
+cv2.imshow('edge', edge)
+```
+- White letters on a black background are important for high recognition rates.  
+Black and white processing was performed using Canny instead of Threshold.
+- It was more effective than Threshold as it removed noise that could not be removed with Gaussian Blur.
+- 높은 인식률을 얻기 위해서는 검정 배경에 흰 글자로 만드는 것이 중요하다  
+Threshold 대신 Canny를 사용하여 흑백 처리를 진행했다
+- Gaussian Blur 로 제거되지 않았던 잡음이 함께 제거되어  Threshold 보다 더 효과적이었다
 		
 ![licenseplate](https://github.com/JiHyun-Jo7/CV2/assets/141097551/7f1dc02f-863a-4332-af51-69367ec0e9b3)
 ![licenseplate_result](https://github.com/JiHyun-Jo7/CV2/assets/141097551/8bb21b28-7c56-4b09-b779-8f3ddf30b417)
