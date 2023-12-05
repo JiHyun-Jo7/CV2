@@ -373,14 +373,14 @@ This problem can be solved by adjusting the range of np.array.
 	<summary>Result</summary>
   	<div markdown="1">
 
-![licenseplate](https://github.com/JiHyun-Jo7/CV2/assets/141097551/f054a181-1dd9-4211-84f2-5d76d8cfe716)  
+![licenseplate](https://github.com/JiHyun-Jo7/CV2/assets/141097551/9c8e9593-0f7c-4044-9b5f-80e9c11b4e4b)  
 
-![licenseplate_result](https://github.com/JiHyun-Jo7/CV2/assets/141097551/3d079804-126b-4226-9c9f-b585bc502058)
+![licenseplate_result](https://github.com/JiHyun-Jo7/CV2/assets/141097551/5148ca56-3c00-459b-b48e-0f9770287a61)
 - All letter and numbers matched the result,  
-but it was unfortunate that there was a ':' at the end.  
-It is assumed that it is because of the '⚡' at the end of the electric vehicle license plate.
-- 한글과 숫자 모두 일치했지만 ':' 이 붙는 아쉬운 결과가 나왔다.  
-전기차 번호판 끝에 있는 '⚡' 때문이라고 추측된다.
+but it was unfortunate that there was a '.' at the end.  
+It is assumed that this is due to insufficient noise removal or the '⚡' at the end of the electric vehicle license plate.
+- 한글과 숫자 모두 일치했지만 '.' 이 붙는 아쉬운 결과가 나왔다.  
+  노이즈 제거가 덜 됐거나 전기차 번호판 끝에 있는 '⚡' 때문이라고 추측된다.
 
    </div>
 </details>
