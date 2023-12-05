@@ -510,7 +510,7 @@ Threshold 대신 Canny를 사용하여 흑백 처리를 진행했다
 </details>
 
 ---
-### 26. [Barcode 01](26_Barcode01.py) 
+### 26. [Barcode 01](26_barcode01.py) 
 ---
 - Read the barcode in the video using the pyzbar function, and save it as a csv file
 - pyzbar를 사용하여 영상 속 바코드를 읽고 csv 파일로 저장한다
@@ -528,7 +528,7 @@ Threshold 대신 Canny를 사용하여 흑백 처리를 진행했다
 </details>
 
 ---
-### 27. [Barcode 02](27_Barcode02.py) 
+### 27. [Barcode 02](27_barcode02.py) 
 ---
 - Read the barcode in the video, print the barcode data.
 - 영상 속 바코드를 읽고 데이터를 출력한다
