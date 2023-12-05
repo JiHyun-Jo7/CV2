@@ -13,25 +13,23 @@ imgray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imshow('imgray', imgray)
 
 # Gaussian Blur
-dst = cv2.GaussianBlur(imgray, (0, 0), 1)
+dst = cv2.GaussianBlur(imgray, (0, 0), 1.5)
 cv2.imshow('Gaussian', dst)
 
-# Image binarization
-ret, thimg = cv2.threshold(dst, 150, 255, cv2.THRESH_BINARY_INV)
-cv2.imshow('binarization', thimg)
+# Convert image to black and white and Outline extraction
+edge = cv2.Canny(dst, 150, 180)
+cv2.imshow('edge', edge)
 
-# Find outline
-contours, _ = cv2.findContours(thimg, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+# Find Outline
+contours, _ = cv2.findContours(edge, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-
-# Initialize 
+# Initailize
 selected_contours = []
 
 # Select Area
 for contour in contours:
     area = cv2.contourArea(contour)
-  # range of area can be adjusted depending on the img
-    if area > 2800 and area < 3300:
+    if area > 2800 and area < 5000:
         selected_contours.append(contour)
         x, y, w, h = cv2.boundingRect(contour)
         cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
@@ -39,9 +37,9 @@ for contour in contours:
 if selected_contours:
     x, y, w, h = cv2.boundingRect(np.concatenate(selected_contours))
     plate_roi = img[y:y + h, x:x + w]
-    plate_text = pytesseract.image_to_string(plate_roi, config='--psm 8', lang='kor')  
 
-    print("Number:", plate_text)
+    plate_text = pytesseract.image_to_string(plate_roi, lang='kor')
+    print("license plate:", plate_text)
 
 cv2.imshow('Result', img)
 cv2.waitKey(0)
