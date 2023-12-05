@@ -528,7 +528,7 @@ Threshold 대신 Canny를 사용하여 흑백 처리를 진행했다
 </details>
 
 ---
-### 27. [Barcode 02](26_Barcode02.py) 
+### 27. [Barcode 02](27_Barcode02.py) 
 ---
 - Read the barcode in the video, print the barcode data.
 - 영상 속 바코드를 읽고 데이터를 출력한다
