@@ -1,9 +1,10 @@
 # 🎥 Open CV2 
 ---
-### 🤖 개발 환경
+### 🤖 개발 환경 (IDE)
 - NVIDIA Jetson Nano Development Kit-B01
 - Ubuntu 18.04.6 LTS
 - python 3.6.9
+- lang Kor
 ---
 ### 01. [Open Video](01_openvideo.py)
 ---
@@ -372,15 +373,17 @@ This problem can be solved by adjusting the range of np.array.
 <details>
 	<summary>Result</summary>
   	<div markdown="1">
+		
+![licenseplate](https://github.com/JiHyun-Jo7/CV2/assets/141097551/7f1dc02f-863a-4332-af51-69367ec0e9b3)
+![licenseplate_result](https://github.com/JiHyun-Jo7/CV2/assets/141097551/8bb21b28-7c56-4b09-b779-8f3ddf30b417)
 
-![licenseplate](https://github.com/JiHyun-Jo7/CV2/assets/141097551/9c8e9593-0f7c-4044-9b5f-80e9c11b4e4b)  
-
-![licenseplate_result](https://github.com/JiHyun-Jo7/CV2/assets/141097551/5148ca56-3c00-459b-b48e-0f9770287a61)
-- All letter and numbers matched the result,  
-but it was unfortunate that there was a '.' at the end.  
-It is assumed that this is due to insufficient noise removal or the '⚡' at the end of the electric vehicle license plate.
-- 한글과 숫자 모두 일치했지만 '.' 이 붙는 아쉬운 결과가 나왔다.  
-  노이즈 제거가 덜 됐거나 전기차 번호판 끝에 있는 '⚡' 때문이라고 추측된다.
+- The number of car numbers in Korea has been reorganized several times recently, so the number is not unified.  
+  If the number of numbers is unified in a country, it would be good to use the <config='--psm x'> function. (x = number of license plate)
+- If i use the YOLO module, you can automatically recognize the location of the car license plate,  
+  but it is a bit disappointing that it was not applied.
+- 한국의 자동차 번호의 수는 최근 수차례 개편되어 갯수가 통일되어있지 않은데,  
+  만일 번호의 수가 통일되어있는 국가라면 <config='--psm x'> 기능을 사용하면 좋을 것 같다 (x = 자동차 번호의 수)
+- YOLO 모듈을 사용하면 자동차 번호판을 자동으로 인식할 수 있는데 해당 기능을 적용하면 더 좋은 프로그램이 될 것 같다
 
    </div>
 </details>
