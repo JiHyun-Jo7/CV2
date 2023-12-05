@@ -537,9 +537,8 @@ Threshold 대신 Canny를 사용하여 흑백 처리를 진행했다
 	<summary>Result</summary>
   	<div markdown="1">
 		
+![barcode02](https://github.com/JiHyun-Jo7/CV2/assets/141097551/187a8896-c744-4c97-820d-73562a6688aa)  
 ![terminal](https://github.com/JiHyun-Jo7/CV2/assets/141097551/435126e5-9fd7-4c70-ad99-81a061323e6b)
-![barcode02](https://github.com/JiHyun-Jo7/CV2/assets/141097551/187a8896-c744-4c97-820d-73562a6688aa)
-
 - Barcode data was printed accurately on the terminal.
 - 바코드 데이터가 터미널에 정확하게 출력됐다.
  
