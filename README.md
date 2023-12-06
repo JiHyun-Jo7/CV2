@@ -4,7 +4,7 @@
 - NVIDIA Jetson Nano Development Kit-B01
 - Ubuntu 18.04.6 LTS
 - python 3.6.9
-- lang Kor
+- Lang Kor
 ---
 ### 01. [Open Video](01_openvideo.py)
 ---
@@ -360,6 +360,9 @@ This problem can be solved by adjusting the range of np.array.
 
 ![camshift](https://github.com/JiHyun-Jo7/CV2/assets/141097551/5034351e-0116-4485-be95-2d7a7c9a36a6)
 
+- can see the size of the rectangle changing
+- 사각형의 크기가 변하는 것을 볼 수 있다
+
    </div>
 </details>
 
@@ -379,6 +382,9 @@ This problem can be solved by adjusting the range of np.array.
   	<div markdown="1">
 
 ![meanshift](https://github.com/JiHyun-Jo7/CV2/assets/141097551/fb2c2231-68e6-4e60-a3dc-4f43fc78615d)
+
+- Unlike CAM, the size of the square does not change
+- CAM shift와 달리 사각형의 크기에 변화가 없다
 
    </div>
 </details>
