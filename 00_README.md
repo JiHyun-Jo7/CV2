@@ -1,6 +1,6 @@
 # 🎥 Open CV2 
 ---
-### 🤖 개발 환경 (IDE)
+## 🤖 개발 환경 (IDE)
 - NVIDIA Jetson Nano Development Kit-B01
 - Ubuntu 18.04.6 LTS
 - python 3.6.9
