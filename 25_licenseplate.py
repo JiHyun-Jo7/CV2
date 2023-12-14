@@ -1,4 +1,3 @@
-# https://github.com/JiHyun-Jo7/CV2/blob/main/README.md#23-license-plate-
 # function values can be adjusted depending on the img
 
 import cv2
