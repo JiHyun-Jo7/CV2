@@ -480,7 +480,7 @@ cv2.findContours(thimg, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 </details>
 
 ---
-### 25. 🚗[License Plate](25_licenseplate.py) 
+### 25. 🚗[Number Plate](25_numbereplate.py) 
 ---
 - Recognize car license plates in images using Open CV, preprocess data, and output processed data with tesseract
 - Open CV를 사용하여 이미지 속 자동차 번호판을 인식하여 데이터를 가공, tesseract로 가공한 데이터 출력
